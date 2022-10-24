@@ -22,8 +22,8 @@
   }
 </script>
 
-<nav class="flex items-center border-b border-zinc-700 p-4 lg:px-6">
-  <div class="flex w-1/3 items-center">
+<nav class="">
+  <div class="">
     <div class="mr-4" class:active={currentRoute === '/'}>
       <a href="/" data-sveltekit-prefetch class="">
         <picture>
@@ -54,16 +54,13 @@
       {/each}
     </div>
   </div>
-  <div class="hidden w-1/3 lg:block">
+  <div class="">
     <SearchBar />
   </div>
   <div class="ml-auto flex items-center">
-    <button on:click={openCart} class="relative my-2 mx-4">
+    <button on:click={openCart} class="">
       <Icons strokeColor="#fff" type="cart" />
-      <div
-        data-test="cart-quantity"
-        class="absolute bottom-0 left-0 -ml-3 -mb-3 flex h-5 w-5 items-center justify-center rounded-full border border-black bg-white text-xs text-black"
-      >
+      <div data-test="cart-quantity" class="">
         {$cartQuantity}
       </div>
     </button>
@@ -82,10 +79,10 @@
       on:click|self={() => {
         showMenu = false;
       }}
-      class="absolute inset-0 z-50 flex max-h-screen w-full justify-end overflow-hidden bg-black/50 lg:hidden"
+      class=""
     >
-      <div class="z-30 w-full bg-black p-6 md:w-1/2 lg:w-1/3">
-        <div class="flex w-full items-center justify-between">
+      <div class="">
+        <div class="">
           <button
             aria-label="Close menu"
             on:click={() => {
@@ -96,14 +93,12 @@
           </button>
           <button on:click={openCart} class="relative mr-4">
             <Icons strokeColor="#fff" type="cart" />
-            <div
-              class="absolute bottom-0 left-0 -ml-3 -mb-3 flex h-5 w-5 items-center justify-center rounded-full border border-black bg-white text-xs text-black"
-            >
+            <div class="">
               {$cartQuantity}
             </div>
           </button>
         </div>
-        <div class="mt-6 flex w-full flex-col">
+        <div class="">
           {#each tabs as tab, i (tab.name)}
             <div
               class:active={currentRoute === tab.path}

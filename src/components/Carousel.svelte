@@ -2,22 +2,18 @@
   export let items = [];
 </script>
 
-<div class="slider relative w-full overflow-scroll bg-light">
-  <div class="slide-track flex">
+<div class="">
+  <div class="">
     {#each items as item (item.node.id)}
-      <a
-        data-sveltekit-prefetch
-        href={`/product/${item.node.handle}`}
-        class="slide relative h-[40vh] flex-none md:w-1/3"
-      >
+      <a data-sveltekit-prefetch href={`/product/${item.node.handle}`} class="">
         <img
           alt={item.node.title}
-          class="h-full"
+          class=""
           decoding="async"
           loading="lazy"
           src={item.node.images.edges[0].node.originalSrc}
         />
-        <div class="absolute top-0 left-0 z-40 mt-32 ml-44 bg-black p-4">{item.node.title}</div>
+        <div class="a">{item.node.title}</div>
       </a>
     {/each}
   </div>

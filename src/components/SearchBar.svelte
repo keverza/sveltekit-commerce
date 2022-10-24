@@ -14,8 +14,8 @@
   }
 </script>
 
-<form on:submit|preventDefault={submit} class="relative flex w-full items-center">
-  <div class="absolute top-0 right-0 mr-2">
+<form on:submit|preventDefault={submit} class="">
+  <div class="">
     <Icons strokeColor="#fff" type="search" />
   </div>
   <input
@@ -24,7 +24,7 @@
     bind:value
     placeholder="Search for products..."
     autocomplete="off"
-    class="w-full border border-white/30 bg-transparent p-2"
+    class=""
   />
 </form>
 

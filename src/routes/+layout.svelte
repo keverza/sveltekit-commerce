@@ -106,7 +106,7 @@
     />
   {/if}
   <Header on:openCart={openCart} />
-  <div class="min-h-screen overflow-scroll">
+  <div class="">
     <slot />
     <Footer />
   </div>
