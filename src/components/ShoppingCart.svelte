@@ -43,9 +43,9 @@
   on:click|self
   class="absolute inset-0 z-50 flex max-h-screen w-full justify-end overflow-hidden bg-black/50"
 >
-  <div class="z-50 w-full bg-black p-6 md:w-1/2 lg:w-1/3 relative">
+  <div class="relative z-50 w-full bg-black p-6 md:w-1/2 lg:w-1/3">
     {#if loading}
-      <div class="absolute inset-0 bg-black/50 z-50" />
+      <div class="absolute inset-0 z-50 bg-black/50" />
     {/if}
     <div class="mb-6 flex w-full items-center justify-between">
       <div class="text-2xl font-medium">My Cart</div>
@@ -132,39 +132,4 @@
 </div>
 
 <style>
-  .lds-ring {
-    display: inline-block;
-    position: relative;
-    width: 20px;
-    height: 20px;
-  }
-  .lds-ring div {
-    box-sizing: border-box;
-    display: block;
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    margin: 2px;
-    border: 2px solid #000;
-    border-radius: 50%;
-    animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: #000 transparent transparent transparent;
-  }
-  .lds-ring div:nth-child(1) {
-    animation-delay: -0.45s;
-  }
-  .lds-ring div:nth-child(2) {
-    animation-delay: -0.3s;
-  }
-  .lds-ring div:nth-child(3) {
-    animation-delay: -0.15s;
-  }
-  @keyframes lds-ring {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
 </style>

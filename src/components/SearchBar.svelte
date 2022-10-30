@@ -29,12 +29,4 @@
 </form>
 
 <style>
-  form {
-    margin: 0px;
-    padding: 0px;
-    display: inline;
-  }
-  input::placeholder {
-    color: rgb(85, 85, 85);
-  }
 </style>
